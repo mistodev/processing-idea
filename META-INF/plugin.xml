@@ -1,0 +1,50 @@
+<idea-plugin version="2">
+    <id>org.idea.processing.plugin</id>
+    <name>Processing IDEA</name>
+    <version>1.0.0a</version>
+    <vendor email="mistodev@protonmail.com" url="https://mistodev.github.io/processing-idea">mistodev</vendor>
+
+    <depends>org.jetbrains.idea.maven</depends>
+
+    <description><![CDATA[
+      A plugin for simplifying working with the Processing library in Java.
+      <br>
+      <ul>
+        <li>Download and manage Processing library versions.</li>
+        <li>Import PDE sketchbooks as Java projects.</li>
+        <li>Create and manage custom sketch run configurations.</li>
+        <li>Adds custom inspection and quick-fix for settings methods invoked outside of settings.</li>
+      </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      First alpha build.
+    ]]>
+    </change-notes>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Build+Number+Ranges for description -->
+    <idea-version since-build="131"/>
+
+    <!-- please see https://confluence.jetbrains.com/display/IDEADEV/Plugin+Compatibility+with+IntelliJ+Platform+Products
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.idea.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <moduleType id="org.idea.processing.module"
+                    implementationClass="org.idea.processing.plugin.project_creation.ProcessingModuleType"/>
+        <configurationType implementation="org.idea.processing.plugin.run_configuration.ProcessingConfigurationType"/>
+        <programRunner implementation="org.idea.processing.plugin.run_configuration.ProcessingProgramRunner"/>
+        <projectImportProvider implementation="org.idea.processing.plugin.pde_import.ProcessingProjectImportProvider"/>
+        <projectOpenProcessor id="org.idea.processing.project.open.processor"
+                              implementation="org.idea.processing.plugin.pde_import.ProcessingProjectOpenProcessor"/>
+        <projectImportBuilder id="org.idea.processing.project.import.builder"
+                              implementation="org.idea.processing.plugin.pde_import.ProcessingImportBuilder"/>
+        <localInspection language="JAVA"
+                         level="ERROR"
+                         enabledByDefault="true"
+                         shortName="SettingsInvokedInSetupInspection"
+                         implementationClass="org.idea.processing.plugin.intention.SettingsInvokedInSetupInspection"/>
+    </extensions>
+</idea-plugin>

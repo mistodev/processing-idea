@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.idea.processing.plugin.pde_import.ProcessingSketchRootSelectStep">
+  <grid id="27dc6" binding="importPanel" layout-manager="GridLayoutManager" row-count="13" column-count="7" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="924" height="436"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <vspacer id="b7abe">
+        <constraints>
+          <grid row="2" column="0" row-span="2" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <component id="20d58" class="com.intellij.openapi.ui.TextFieldWithBrowseButton" binding="projectRootDirectoryBrowser">
+        <constraints>
+          <grid row="0" column="2" row-span="1" col-span="4" vsize-policy="3" hsize-policy="3" anchor="8" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="555" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <toolTipText value="Select path to existing PDE sketchbook directory."/>
+        </properties>
+      </component>
+      <component id="d1406" class="javax.swing.JLabel" binding="projectRootBrowserLabel">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sketch Directory"/>
+        </properties>
+      </component>
+      <component id="a0399" class="javax.swing.JLabel" binding="filesDetectedLabel">
+        <constraints>
+          <grid row="0" column="6" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="0 PDE files"/>
+        </properties>
+      </component>
+      <component id="59543" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="2" column="2" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sketch Classes"/>
+        </properties>
+      </component>
+      <vspacer id="42fbc">
+        <constraints>
+          <grid row="6" column="5" row-span="5" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="d2336">
+        <constraints>
+          <grid row="1" column="2" row-span="1" col-span="3" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <component id="1c444" class="javax.swing.JRadioButton" binding="importIntoDefaultProjectOption">
+        <constraints>
+          <grid row="6" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <selected value="true"/>
+          <text value="The most recently used project location"/>
+        </properties>
+      </component>
+      <component id="f216a" class="javax.swing.JRadioButton" binding="createProjectInSelectedRootOption">
+        <constraints>
+          <grid row="7" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="The selected sketch directory"/>
+        </properties>
+      </component>
+      <component id="b30de" class="javax.swing.JRadioButton" binding="importProjectIntoCustomRootOption">
+        <constraints>
+          <grid row="8" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="A custom location"/>
+        </properties>
+      </component>
+      <component id="8e981" class="com.intellij.openapi.ui.TextFieldWithBrowseButton" binding="customImportRootDirectoryBrowser">
+        <constraints>
+          <grid row="10" column="2" row-span="1" col-span="2" vsize-policy="3" hsize-policy="7" anchor="8" fill="0" indent="1" use-parent-layout="false">
+            <minimum-size width="500" height="-1"/>
+            <preferred-size width="500" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <enabled value="false"/>
+          <visible value="false"/>
+        </properties>
+      </component>
+      <component id="6ee52" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="5" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Create project from importable files at:"/>
+        </properties>
+      </component>
+      <component id="b46d8" class="javax.swing.JLabel">
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="10" fill="0" indent="1" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Project Path"/>
+        </properties>
+      </component>
+      <component id="990db" class="javax.swing.JTextField" binding="projectCreationPathPreviewTextField" default-binding="true">
+        <constraints>
+          <grid row="12" column="2" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="10" fill="0" indent="1" use-parent-layout="false">
+            <preferred-size width="555" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <editable value="false"/>
+          <toolTipText value="Path at which project will be created."/>
+        </properties>
+      </component>
+      <hspacer id="8f373">
+        <constraints>
+          <grid row="9" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <vspacer id="67832">
+        <constraints>
+          <grid row="11" column="2" row-span="1" col-span="1" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </vspacer>
+      <hspacer id="792a5">
+        <constraints>
+          <grid row="4" column="2" row-span="1" col-span="1" vsize-policy="1" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+      </hspacer>
+      <scrollpane id="5c77">
+        <constraints>
+          <grid row="3" column="2" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <toolTipText value="PDE files identified for import."/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="d6fee" class="javax.swing.JTextArea" binding="importableClassesListTextArea">
+            <constraints/>
+            <properties>
+              <editable value="false"/>
+              <text value="No PDE files were found at the selected sketch root directory."/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="importRadioButtonGroup">
+      <member id="1c444"/>
+      <member id="f216a"/>
+      <member id="b30de"/>
+    </group>
+  </buttonGroups>
+</form>
