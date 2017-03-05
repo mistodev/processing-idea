@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'lacuna_regular';
+    src: url('../fonts/lacuna_regular/lacuna-webfont.eot');
+    src: url('../fonts/lacuna_regular/lacuna-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/lacuna_regular/lacuna-webfont.woff') format('woff'),
+         url('../fonts/lacuna_regular/lacuna-webfont.ttf') format('truetype'),
+         url('../fonts/lacuna_regular/lacuna-webfont.svg#lacuna_regularregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'hattori_hanzolight';
+    src: url('../fonts/hattori_hanzo/hattorihanzo_light/Hattori_Hanzo-webfont.eot');
+    src: url('../fonts/hattori_hanzo/hattorihanzo_light/Hattori_Hanzo-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/hattori_hanzo/hattorihanzo_light/Hattori_Hanzo-webfont.woff') format('woff'),
+         url('../fonts/hattori_hanzo/hattorihanzo_light/Hattori_Hanzo-webfont.ttf') format('truetype'),
+         url('../fonts/hattori_hanzo/hattorihanzo_light/Hattori_Hanzo-webfont.svg#hattori_hanzolight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#wrapper {
+    width: 100%;
+    min-width: 960px;
+    margin: 0 auto;
+}
+
+#header {
+    float: left;
+    width: 100%;
+    height: 500px;
+    background-color: #422335;
+    background-image: url('../img/header-bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#header #logo {
+    height: 350px;
+    width: 400px;
+    margin: 0 auto;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+}
+
+#footer {
+    text-align: center;
+    font-family: "lacuna_regular"; 
+    color: white;
+    width: 100%;
+    height: 125px;
+    background-color: #422336;
+    background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239499a7' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+
+    clear: both;
+}
+
+#footer a {
+    color: #AAD2D5;
+    text-decoration: none;
+}
+
+#footer #thanks {
+   margin: 0 auto;
+}
+
+#footer #mailing_list {
+    margin: 0 auto;
+}
+
+#footer #mailing_list h1 {
+    font-size: 40px;
+    letter-spacing: 0px;
+}
+
+
+#content {
+    width: 100%;
+    /*background-color: rgba(154, 170, 152, 0.65);*/
+    background: white;
+    float: left;
+    font-family: 'hattori_hanzolight';
+}
+
+#content a {
+   color: #046466;
+   text-decoration: none;
+}
+
+#content #statement {
+    color: white;
+    letter-spacing: 5px;
+    font-family: "lacuna_regular"; 
+    font-size: 40px;
+    text-align: center;
+   background-color: #AAD2D5;
+   background-image: url("data:image/svg+xml,%3Csvg width='16' height='20' viewBox='0 0 16 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%239499a7' fill-opacity='0.1' fill-rule='evenodd'%3E%3Cpath d='M8 0v20L0 10M16 0v10L8 0M16 10v10H8'/%3E%3C/g%3E%3C/svg%3E");
+    -webkit-box-shadow: 0 10px 8px -5px black;
+    -moz-box-shadow:    0 10px 8px -5px black;
+    box-shadow:         0 10px 8px -5px black;
+    margin: 0 auto;
+}
+
+#content #statement h2 {
+    font-size: 25px;
+    letter-spacing: 0px;
+    color: black;
+}
+
+#content #download {
+   width: 270px;
+   margin: 0 auto;
+   margin-top: 50px;
+   margin-bottom: 50px;
+   font-size: 23px;
+   background: #91BA6B;
+   border: 2px solid;
+}
+
+#content #download #checksum {
+   font-size: 12px;
+   padding-left: 2px;
+}
+
+#content #quicklinks {
+   width: 850px;
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+   height: 250px;
+   font-size: 18px;
+}
+
+#content #quicklinks h2 {
+   text-align: center;
+}
+
+#content #quicklinks p {
+   padding-left: 10px;
+}
+
+#content #quicklinks #column_one {
+   float: left;
+   width: 400px;
+   border-right: 2px solid;
+}
+
+#content #quicklinks #column_two {
+   float: left;
+   width: 400px;
+}
+
+#content #intro {
+   margin: 0 auto;
+   margin-top: 25px;
+   width: 80%;
+}
+
+#content #intro h2 {
+   font-size: 20px;
+   text-align: center;
+}
+
+#content #features {
+   width: 80%;
+   margin: 0 auto; 
+   margin-top: 10px;
+}
+
+#content #features h1 {
+   width: 100%;
+   font-family: "lacuna_regular"; 
+   font-size: 40px;
+   color: black;
+    
+}
+
+#content #features #feature {
+    height: 550px;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 100px;
+}
+
+#content #features #feature figure {
+    width: 100%;
+    display: table;
+}
+
+#content #features #feature figure img {
+    height: 450px;
+    width: 685px;
+    float: right;
+}
+
+#content #features #feature figcaption {
+    display: table-caption; 
+    caption-side: left;
+    width: 380px;
+    float: left;
+}
+
+#content #features #feature #description {
+    float: left;
+    width: 30%;
+    height: 100%;
+    margin-right: 20px;
+}
+
+#content #features #feature #image {
+    float: right;
+    width: 685px;
+    height: 450px;
+}
+
+#content #features #feature p {
+    font-size: 20px;
+}
+
+#content #features #feature img {
+    width: 100%;
+    height: 100%;
+}
+
