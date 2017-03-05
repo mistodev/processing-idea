@@ -1,0 +1,143 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Processing IDEA</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/page.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="wrapper">
+            <div id = "header">
+                <div id = "logo">
+                    <img src="img/logo.png" style="width:350px; height:350px;" />
+                </div>
+            </div>
+            <div id = "content">
+                    <div id = "statement">
+                        Processing integrated with IntelliJ
+                        <h2>The Processing IDEA plugin aims to streamline writing and managing Processing sketches in the IntelliJ IDE</h2>
+                    </div>
+                    <div id = "quicklinks">
+                        <div id = "column_one"><h2>Download</h2><img src="img/download.svg" style="width: 100px; height: 100px; float: left; margin-bottom: 50px;" /><p>An alpha version (1.0.0a) is available for download.</p><p>Instructions for installation can be found <a href="instructions">here</a>.
+                            <br /><br />
+                            <b>Requires</b> <a href="https://www.jetbrains.com/idea/whatsnew/">IntelliJ IDEA 2016</a> or later.</p>
+                        </div>
+                        <div id = "column_two"><h2>Documentation</h2><img src="img/documentation.svg" style="width: 100px; height: 100px; float: right;" /><p>Learn how the plugin works and find out other plugin related information.</p></div>
+                    </div>        
+                    <div id="features">
+                        <h1>Overview</h1>
+
+                        <div id = "feature">
+                           <figure>
+                               <figcaption>
+                                   <h2>New Sketch Project Creation</h2>
+                                   <p>Create new sketch projects without a pre-existing install of the Processing IDE. Compile sketches that are based on different versions of the Processing library.</p>
+                               </figcaption> 
+                               <img src="img/feature_image_one.jpg" />
+                           </figure>
+                        </div>
+                        <div id = "feature">
+                            <figure>
+                                <figcaption>
+                                    <h2>Multiple Sketch Run Configurations</h2>
+                                    <p>Manage multiple sketch run-time parameters using Run Configurations. Create several main sketch classes in a single sketch project.</p>
+                                </figcaption>      
+                                <img src="img/feature_image_two.jpg" />
+                            </figure>
+                        </div>
+                        <div id = "feature">
+                            <figure>
+                                <figcaption>
+                                    <h2>Import Existing Sketches</h2>
+                                    <p>Import existing Processing IDE sketches converting them automatically into a Java IntelliJ project.</p>
+                                </figcaption>
+                                <img src="img/feature_image_three.jpg" />
+                            </figure>    
+                        </div>
+                       
+                       <h1>Planned for Beta release</h1>
+                       
+                       <div style = "height: 250px" id = "feature">
+                            <div id = "description">
+                                <h2>Export to Processing IDE</h2>
+                                <p>Export sketch projects as a valid Processing IDE sketchbook.</p>
+                            </div> 
+                            <div id = "description">
+                                <h2>Contribution Explorer</h2>
+                                <p>A convenient interface for accessing and using community contributed Processing libraries.</p>
+                            </div>
+                            <div id = "description">
+                                <h2>Smarter Import</h2>
+                                <p>Enhance the PDE sketch import logic further to better support the Processing language grammar.</p>
+                            </div>
+                        <!--<div id = "feature">
+                           <h2>Utilise IntelliJ IDEA's Powerful Features</h2>
+                           <p>The IntelliJ IDE is rich with mature and powerful features that simplify writing code. For example, hot-code reloading lets you make changes to sketches in real-time. Auto-completion and inspections offer almost immediate feedback on code written, ultimately boosting productivity. 
+                       </div>-->
+                   </div>
+
+                   <h1 style="margin-top: -100px">F.A.Q.</h1>
+
+                   <div id = "feature" style="height: 250px">
+                       <div style="width: 100%; height: auto;" id = "description">
+                           <h2>Is this project part of the Processing foundation? What is 'Processing'?</h2>
+                           <p>This project has no affiliation with the Processing foundation and is not part of the foundation. If you are not familiar with the Processing language/foundation/IDE, refer to <a href="">the Processing website</a> for more information.</p>
+                       </div>
+                       <div style="width: 100%; height: auto;" id = "description">
+                           <h2>Does this plugin add Processing language support to IntelliJ? Can I work with .pde files directly?</h2>
+                           <p>This plugin does <b>not</b> add support for the Processing language, nor does it attempt to replace the Processing IDE. The Processing IDE compliments the language, and the overall philosophy of the Processing project. Instead, this plugin is intended to simplify aspects of working with the Processing library, for individuals who prefer working in their IDE of choice.
+                       </div>
+                       <div style="width: 100%; height: auto;" id = "description">
+                           <h2>Should the importer produce fully valid Java projects? I get compilation errors in my project post-import.</h2>
+                           <p>The importer takes a best effort approach to importing sketchbooks in the PDE format. Depending on the structure of the sketch, the conversion may not produce a compilable project and some manual correction would be necessary. In this alpha release, it is rather dumb and does not handle all of the Processing conventions. Notably, primitive cast methods are not converted. By the beta, it is hoped that imported sketches will require almost no manual syntactic changes. Depending on how the sketch was written, re-structuring may remain a necessity.</p>
+                       </div>
+                       <div style="width: 100%; height: auto;" id = "description">
+                           <h2>Will support for older versions of IntelliJ be added?</h2>
+                           <p>Depends on demand, but it is not an immediate priority.</p>
+                       </div>
+                       <div style="width: 100%" id = "description">
+                           <h2>How can I contribute?</h2>
+                           <p>Until the beta is released, the most useful contribution is real world usage. Feedback on what is good and bad in terms of workflow and bug reports are valuable.</p>
+                       </div>
+                   </div>
+                    </div>    
+                </div>
+                <div id = "footer">
+                    <div id = "mailing_list">
+                        <h1>Want to be notified about releases?</h1>
+                        <p>Sign up to the mailing list using your email to be informed about releases and major developments.</p>
+                </div>
+                </div>
+        </div>
+ 
+        <!--<script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>-->
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <!--<script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>-->
+    </body>
+</html>
